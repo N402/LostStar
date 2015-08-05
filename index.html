@@ -18,8 +18,17 @@
 <body>
 	<div id="content">
 		<img src="img/starwars.png">
-		<p><script type="text/javascript">var myDate = new Date(); document.write(myDate.toLocaleDateString());</script></p>
-		<p>很高心遇到你:)</p>
+		<p>
+			<script type="text/javascript">
+				var myDate = new Date(); 
+				var year = myDate.getFullYear();
+				var month = myDate.getMonth();
+				month += 1;
+				var day = myDate.getDate();
+				document.write(year+'年'+month+'月'+day+'日');
+			</script>
+		</p>
+		<p>很高心再次遇到你:)</p>
 	</div>
 </body>
 </html>
